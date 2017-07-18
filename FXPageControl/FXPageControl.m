@@ -226,6 +226,7 @@ const CGPathRef FXPageControlDotShapeTriangle = (const CGPathRef)3;
             {
                 [dotBorderColor setStroke];
                 CGContextSetLineWidth(context, dotBorderWidth);
+                dotSize -= dotBorderWidth;
                 if (!dotShape || dotShape == FXPageControlDotShapeCircle)
                 {
                     CGContextAddEllipseInRect(context, CGRectMake(-dotSize / 2, -dotSize / 2, dotSize, dotSize));
